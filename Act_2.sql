@@ -1,5 +1,7 @@
 /* Para accerder a la base de datos */
 mysql -h localhot -u root -p 
+
+    
 /*Para crear una base de datos*/
 CREATE DATABASE blog;
 /*Designar que base de datos va a utilizar*/
