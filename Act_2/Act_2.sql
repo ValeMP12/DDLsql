@@ -1,5 +1,5 @@
 /* Para accerder a la base de datos */
-mysql .h localhot .u root .p 
+mysql -h localhost -u root -p 
 /*Para crear una base de datos*/
 CREATE DATABASE blog;
 /*Designar que base de datos va a utilizar*/
@@ -98,3 +98,7 @@ CREATE TABLE  IF NOT EXISTS mensajeria (
     receptor VARCHAR(30),
     fecha_de_creacion TIMESTAMP
 ) ;
+
+ALTER TABLE mensajeria MODIFY COLUMN emisor VARCHAR(30) NOT NULL;
+ALTER TABLE mensajeria MODIFY COLUMN receptor VARCHAR(30) NOT NULL;
+ALTER TABLE mensajeria MODIFY COLUMN mensaje_id VARCHAR(30) PRIMARY KEY;
